@@ -29,7 +29,7 @@ def main():
                 st.error("กรุณากรอกข้อมูลให้ครบ")
     else:
         st.title(f"CarePhat - will give you what you can open {st.session_state.name}!")
-        st.write(f"วันที่: {st.session_state.date}")
+        st.write(f"Date: {st.session_state.date}")
         if 'flipped' not in st.session_state:
             st.session_state.flipped = {key: False for key in rewards.keys()}
 
